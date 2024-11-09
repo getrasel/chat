@@ -26,7 +26,7 @@ kariminput.addEventListener("input", () => {
 function submitbtn(){
     if(rahiminput.value.trim() !== ""){
         const rahimdiv = document.createElement("div");
-        rahimdiv.classList.add('chatlist');
+        rahimdiv.classList.add('chatlist', "anotheruser");
         const rahim = document.createElement("p");
         rahim.textContent = rahiminput.value;
     
@@ -36,6 +36,7 @@ function submitbtn(){
          // Create mirrored message for Karim's view
          const karimdiv = rahimdiv.cloneNode(true);
          karimdiv.classList.add("chatlist");
+         karimdiv.classList.remove("anotheruser")
          karimBox.appendChild(karimdiv);
 
          rahiminput.value = "";
@@ -56,7 +57,8 @@ function submituser(){
 
         // Create mirrored message for Karim's view
         const rahimdiv = karimdiv.cloneNode(true);
-        rahimdiv.classList.add("anotheruser");
+        rahimdiv.classList.add("chatlist");
+        rahimdiv.classList.remove("anotheruser")
         rahimBox.appendChild(rahimdiv);
 
         kariminput.value = "";
