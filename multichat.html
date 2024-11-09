@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="flexbox">
+        <div class="chat" id="rahimcontainer">
+            <h2 class="chatTitle" id="rtitlechat">Rahim</h2>
+            <div class="chatarea" id="rahimbox">
+                <!-- <div class="chatlist" id="listchat">
+                    <p id="rahimmessage">hi</p>
+                </div> -->
+            </div>
+            <div class="button">
+                <input type="text" id="writetext" placeholder="Karim">
+                <button type="button" onclick="submitbtn()" id="button1"><i class="fas fa-arrow-up"></i></button>
+            </div>
+        </div>
+
+        <div class="chat" id="karimcontainer">
+            <h2 class="chatTitle" id="ktitlechat">Karim</h2>
+            <div class="chatarea" id="karimbox">
+                <!-- <div class="chatlist anotheruser" id="listchat2">
+                    <p id="karimmessage">hello</p>
+                </div> -->
+            </div>
+            <div class="button">
+                <input type="text" id="writetext2" placeholder="Rahim">
+                <button type="button" onclick="submituser()" id="button2"><i class="fas fa-arrow-up"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="multichat.js"></script>
+</body>
+</html>

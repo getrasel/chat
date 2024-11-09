@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="chat" id="chatcontainer">
+        <h2 class="chatTitle" id="titlechat">Karim & Rahim</h2>
+        <div class="chatarea" id="containerchat">
+            <div class="chatlist" id="listchat">
+                <p id="message">hi</p>
+            </div>
+            <div class="chatlist anotheruser" id="listchat2">
+                <p id="userm">hello</p>
+            </div>
+        </div>
+        <div class="button">
+            <input type="text" id="writetext" placeholder="Karim">
+            <button type="button" onclick="submitbtn()" id="button1"><i class="fas fa-arrow-up"></i></button>
+        </div>
+        <div class="button">
+            <input type="text" id="writetext2" placeholder="Rahim">
+            <button type="button" onclick="submituser()" id="button2"><i class="fas fa-arrow-up"></i></button>
+        </div>
+    </div>
+
+    <script src="custom.js"></script>
+</body>
+</html>
